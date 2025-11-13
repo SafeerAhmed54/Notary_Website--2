@@ -1871,7 +1871,7 @@ div {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 2rem;
+    /* padding: 2rem; */
 }
 
 .column-50 {
