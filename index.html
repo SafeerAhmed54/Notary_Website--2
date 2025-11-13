@@ -10,17 +10,17 @@
 
 <body>
     <nav class="nav">
-        <div class="mx-auto" style="max-width: 1400px;">
-            <div class="row col-100 justify-between align-center py-6">
-                <div class="col-50 flex justify-start">
+        <div class="container">
+            <div class="row col-100 justify-between align-center py-6 gap-y-6">
+                <div class="nav-left-col col-50 flex justify-start">
                     <img src="images/blue-logo.svg" alt="logo.png">
                 </div>
-                <div class="col-50 flex justify-end align-center bg-white gap-x-2">
+                <div class="nav-right-col col-50 flex justify-end align-center bg-white gap-x-2">
                     <span class="flex flex-center gap-2 bg-light rounded-3xl align-self-center">
                         <a class="bg-blue rounded-3xl text-white text-sm px-1">english</a>
                         <a class="text-sm px-1 text-blue-700">arabic</a>
                     </span>
-                    <button class="py-2 px-8 rounded-md bg-white text-lg border-blue-600 text-blue-700">
+                    <button class="contact-button bg-white border-blue-600 text-blue-700">
                         Contact
                     </button>
                 </div>
@@ -30,17 +30,18 @@
 
     <!-- Main Page -->
     <section class="hero">
-        <div class="">
-            <div class="flex flex-row col-100 bg-black gap-x-4">
-                <div class="col-50  ml-12 py-32 mr-16">
+        <div class="hero-container">
+            <div class="flex flex-row flex-wrap col-100">
+                <div class="col-50 px-12 py-32 mr-16">
                     <div class="col-100">
                         <p class="mt-6 mb-6 py-2 px-4 bg-light rounded-3xl col-fit text-lg text-blue-700">
                             Notary Services
                         </p>
-                        <h1 class="text-5xl py-2 font-semibold">Hire <span class="text-blue-700">Better Faster</span></h1>
+                        <h1 class="text-5xl py-2 font-semibold">Hire <span class="text-blue-700">Better Faster</span>
+                        </h1>
                         <h1 class="text-5xl py-2 font-semibold">Legal talent</h1>
                         <p class="py-6">When you need us for improve your business, then come <br>
-                            with us to help your business have reach it, you just sit<br> 
+                            with us to help your business have reach it, you just sit<br>
                             and feel that goal.
                         </p>
                         <button class="border-0 rounded-md px-16 py-4 bg-blue text-white text-lg font-poppin">
@@ -48,32 +49,49 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-50 bg-img p-12">
+                <div class="col-50 bg-img p-12 bg-light">
                     <form action="" class=" bg-white col-100 h-auto p-8 shadow-lg rounded-xl">
                         <div class="col-100 h-auto flex flex-col flex-center gap-y-8 ">
-                            <div class="col-100 h-100">   
+                            <div class="col-100 h-100">
                                 <h1 class="text-center font-semibold">Leads Form</h1>
                                 <p class="text-center text-lg">Fill this form for entry</p>
                             </div>
-                            <div class="col-100 h-100">   
+                            <div class="col-100 h-100">
                                 <caption for="firstname">First Name</caption> <br>
-                                <input type="text" name="firstname" id="firstname" placeholder="Your First Name" class="block col-100 h-48px border border-gray-400 rounded p-2">
+                                <input type="text" name="firstname" id="firstname" placeholder="Your First Name"
+                                    class="block col-100 h-48px border border-gray-400 rounded p-2">
                             </div>
                             <div class="col-100 h-100">
                                 <caption for="email">Email</caption><br>
-                                <input type="email" name="email" id="email" placeholder="Your Email" class="block col-100 h-48px border border-gray-400 rounded p-2">
+                                <input type="email" name="email" id="email" placeholder="Your Email"
+                                    class="block col-100 h-48px border border-gray-400 rounded p-2">
                             </div>
                             <div class="col-100 h-auto">
-                                <caption for="phone">Phone</caption><br>
-                                <input type="text" name="phone" id="phone" placeholder="Your Phone Number" class="col-30 h-48px border border-gray-400 rounded p-2">
-                                <input type="tel" name="phone" id="phone" placeholder="Your Phone Number" class="col-68 h-48px border border-gray-400 rounded p-2">
-                            </div>
+                                    <label for="phone">Phone</label><br>
+                                    <div class="phone-input-wrapper flex flex-row gap-2">
+                                        <select name="country-code" id="country-code" 
+                                            class="country-code-select h-48px border border-gray-400 rounded p-2">
+                                            <option value="+1">+1 (US)</option>
+                                            <option value="+44">+44 (UK)</option>
+                                            <option value="+91">+91 (IN)</option>
+                                            <option value="+971">+971 (UAE)</option>
+                                            <option value="+966" selected>+966 (SA)</option>
+                                            <option value="+92">+92 (PK)</option>
+                                            <option value="+61">+61 (AU)</option>
+                                            <option value="+86">+86 (CN)</option>
+                                        </select>
+                                        <input type="tel" name="phone" id="phone" placeholder="Your Phone Number"
+                                            class="phone-input h-48px border border-gray-400 rounded p-2">
+                                    </div>
+                                </div>
                             <div class="col-100 h-100">
                                 <caption for="message">Message</caption><br>
-                                <textarea name="message" id="message" class="block col-100 h-48px border border-gray-400 rounded p-2" placeholder="Write Your Message"></textarea>
+                                <textarea name="message" id="message"
+                                    class="block col-100 h-48px border border-gray-400 rounded p-2"
+                                    placeholder="Write Your Message"></textarea>
                             </div>
                             <div class="col-100 h-100">
-                                <input type="submit" name="" id="" class="block col-100 h-48px">
+                                <input type="submit" name="" id="" class="submit-button">
                             </div>
                         </div>
                     </form>
@@ -84,14 +102,16 @@
 
     <!-- Trusted Partners -->
     <section class="partners bg-blue">
-        <div class="">
-            <div class="row flex-center col-100 h-auto">
-                <div class="col-10 relative left-0">
-                    <img src="images/left.png" alt="design.png">
+        <div class="partner-container">
+            <div class="row justify-between col-100 h-auto">
+                <div class="col-10 relative">
+                    <img src="images/left.png" alt="design.png" class="trusted-partner-design left-0">
                 </div>
-                <div class="col-80">
-                    <div class="col-100 text-center py-12"><h1 class="text-4xl font-bold text-white">Trusted Partner</h1></div>
-                    <div class="row flex-center gap-24">
+                <div class="container">
+                    <div class="col-100 text-center py-8">
+                        <h1 class="text-4xl font-bold text-white">Trusted Partner</h1>
+                    </div>
+                    <div class="row flex-center gap-12 py-8">
                         <figure>
                             <img src="images/tinyGoon.PNG" alt="" class="block  mx-auto col-42px h-42px">
                             <figcaption class="py-4 text-center text-white">TinyGoon</figcaption>
@@ -118,96 +138,483 @@
                         </figure>
                     </div>
                 </div>
-                <div class="col-10 relative right-0">
-                    <img src="images/right.svg" alt="design.png">
+                <div class="col-10 relative right-0" style="box-sizing: border-box;">
+                    <img src="images/right.svg" alt="design.png" class=" trusted-partner-design right-0">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Stats Section -->
-    <section class="stats">
+    <!-- About Section -->
+    <section class="about">
         <div class="container">
-            <div class="row">
-                <div class="col"> ... </div>
-                <div class="col"> ... </div>
-                <div class="col"> ... </div>
-                <div class="col"> ... </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Practice Areas -->
-    <section class="practice">
-        <div class="container">
-            <div class="row">
-                <div class="col"> ... </div>
-                <div class="col"> ... </div>
-                <div class="col"> ... </div>
-            </div>
-            <div class="row">
-                <div class="col"> ... </div>
-                <div class="col"> ... </div>
-                <div class="col"> ... </div>
+            <div class="row flex-nowrap py-32 gap-y-12">
+                <div class="about-image-div col-50 h-auto flex flex-row justify-center align-center">
+                    <img src="/images/arbi.png" alt="arbi.png" class="about-image">
+                </div>
+                <div class="col-50 flex flex-col justify-start gap-y-12">
+                    <p class="one font-arial font-weight-500 font-16 block">ONE YEAR ALL YOU NEED</p>
+                    <h1 class="font-arial font-weight-700 mt-30 mb-30 block">About Us</h1>
+                    <p class="paragraph-about font-arial font-weight-500 font-16 mt-40 mb-40 block"
+                        style="word-spacing: 5px; line-height: 1.6;">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                        Neque architecto laudantium, nam dolorem, nihil vero placeat
+                        sapiente sunt alias voluptatum soluta temporibus autem consequuntur
+                        dolor labore officiis est. Aperiam, optio!
+                    </p>
+                    <p class="paragraph-about font-arial font-weight-500 font-16 mt-40 mb-40 block"
+                        style="word-spacing: 5px; line-height: 1.6;">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                        Neque architecto laudantium, nam dolorem, nihil vero placeat
+                        sapiente sunt alias voluptatum soluta temporibus autem consequuntur
+                        dolor labore officiis est. Aperiam, optio!
+                    </p>
+                    <button id="hire-button-about"
+                        class="hire-button-about col-30 h-48px bg-blue rounded text-white btn block border-0 text-xl">
+                        Hire Now
+                    </button>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section class="services">
+    <section class="services-section">
         <div class="container">
-            <div class="row">
-                <div class="col"> ... </div>
-                <div class="col"> ... </div>
-                <div class="col"> ... </div>
-            </div>
-            <div class="row">
-                <div class="col"> ... </div>
-                <div class="col"> ... </div>
-                <div class="col"> ... </div>
+            <div class="flex flex-col flex-center">
+                <div class="col-100 ">
+                    <h1 class="font-arial text-center mt-2 mb-2 font-semibold">
+                        Services We Are Providing
+                    </h1>
+                    <p class="text-center font-arial font-14">Lorem When you need us for improve
+                        your business, then come with us <br>
+                        to help your business have reach it you
+                        just sit and feel that goal.</p>
+                </div>
+                <div class="col-100 services-div flex flex-row flex-wrap justify-around align-center gap-y-5 mt-8 mb-8">
+                    <div class="service-block rounded-md">
+                        <div class="flex flex-center">
+                            <figure class="h-auto py-12 px-12">
+                                <img src="images/service.png" alt="" class="block mx-auto">
+                                <figcaption class="p-4 text-center font-bold text-lg">Mobile Notary Service</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="service-block rounded-md">
+                        <div class="flex flex-center">
+                            <figure class="h-auto py-12 px-12">
+                                <img src="images/service.png" alt="" class="block mx-auto">
+                                <figcaption class="p-4 text-center font-bold text-lg">Mobile Notary Service</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="service-block rounded-md">
+                        <div class="flex flex-center">
+                            <figure class="h-auto py-12 px-12">
+                                <img src="images/service.png" alt="" class="block mx-auto">
+                                <figcaption class="p-4 text-center font-bold text-lg">Mobile Notary Service</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="service-block rounded-md">
+                        <div class="flex flex-center">
+                            <figure class="h-auto py-12 px-12">
+                                <img src="images/service.png" alt="" class="block mx-auto">
+                                <figcaption class="p-4 text-center font-bold text-lg">Mobile Notary Service</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="service-block rounded-md">
+                        <div class="flex flex-center">
+                            <figure class="h-auto py-12 px-12">
+                                <img src="images/service.png" alt="" class="block mx-auto">
+                                <figcaption class="p-4 text-center font-bold text-lg">Mobile Notary Service</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="service-block rounded-md">
+                        <div class="flex flex-center">
+                            <figure class="h-auto py-12 px-12">
+                                <img src="images/service.png" alt="" class="block mx-auto">
+                                <figcaption class="p-4 text-center font-bold text-lg">Mobile Notary Service</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="service-block rounded-md">
+                        <div class="flex flex-center">
+                            <figure class="h-auto py-12 px-12">
+                                <img src="images/service.png" alt="" class="block mx-auto">
+                                <figcaption class="p-4 text-center font-bold text-lg">Mobile Notary Service</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="service-block rounded-md">
+                        <div class="flex flex-center">
+                            <figure class="h-auto py-12 px-12">
+                                <img src="images/service.png" alt="" class="block mx-auto">
+                                <figcaption class="p-4 text-center font-bold text-lg">Mobile Notary Service</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-100">
+                    <h2 class="font-arial text-center mt-2 mb-2 font-semibold">
+                        Prices Increasing Soon
+                    </h2>
+                    <p class="text-center font-arial mb-40 font-14">Lorem When you need us for improve
+                        your business, then come with us <br>
+                        to help your business have reach it you
+                        just sit and feel that goal.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Team Section -->
-    <section class="team">
+    <!-- Client Review Section -->
+    <section class="client-section mt-10 mb-10 bg-light">
         <div class="container">
             <div class="row">
-                <div class="col"> ... </div>
-                <div class="col"> ... </div>
-                <div class="col"> ... </div>
-                <div class="col"> ... </div>
+                <div class="col-100">
+                    <div class="col-100  mt-10 mb-10">
+                        <h1 class="font-arial text-center font-semibold mt-10 mb-2">
+                            What Client Says About Us
+                        </h1>
+                        <p class="text-center font-arial mb-40 font-14">Lorem When you need us for improve
+                            your business, then come with us <br>
+                            to help your business have reach it you
+                            just sit and feel that goal.</p>
+                    </div>
+                    <div class="client-card-container">
+                        <div class="client-card col-23 h-auto p-4 border-0 shadow-lg rounded-lg bg-white">
+                            <div class="client-card-header row justify-between align-center">
+                                <div class="client-stars row justify-between align-self-center">
+                                    <img src="/images/star.svg" alt="">
+                                    <img src="/images/star.svg" alt="">
+                                    <img src="/images/star.svg" alt="">
+                                    <img src="/images/star.svg" alt="">
+                                    <img src="/images/star.svg" alt="">
+                                </div>
+                                <div class="google-logo row">
+                                    <img src="/images/google.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="client-review-content p-15">
+                                <p class="mt-4 mb-4">1 month ago</p>
+                                <p class="mt-4 mb-4 text-justify">When you need us for improve
+                                    your business, then come with us
+                                    to help your business have reach it you
+                                    just sit and feel that goal.
+                                </p>
+                                <p class=" mt-4 mb-4 font-semibold">
+                                    Jhon Doe
+                                </p>
+                            </div>
+                        </div>
+                        <div class="client-card col-23 h-auto p-4 border-0 shadow-lg rounded-lg bg-white">
+                            <div class="client-card-header row justify-between align-center">
+                                <div class="client-stars row  justify-between align-self-center">
+                                    <img src="/images/star.svg" alt="">
+                                    <img src="/images/star.svg" alt="">
+                                    <img src="/images/star.svg" alt="">
+                                    <img src="/images/star.svg" alt="">
+                                    <img src="/images/star.svg" alt="">
+                                </div>
+                                <div class="google-logo row">
+                                    <img src="/images/google.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="client-review-content p-15">
+                                <p class="mt-4 mb-4">1 month ago</p>
+                                <p class="mt-4 mb-4 text-justify">When you need us for improve
+                                    your business, then come with us
+                                    to help your business have reach it you
+                                    just sit and feel that goal.
+                                </p>
+                                <p class=" mt-4 mb-4 font-semibold">
+                                    Jhon Doe
+                                </p>
+                            </div>
+                        </div>
+                        <div class="client-card col-23 h-auto p-4 border-0 shadow-lg rounded-lg bg-white">
+                            <div class="client-card-header row justify-between align-center">
+                                <div class="client-stars row  justify-between align-self-center">
+                                    <img src="/images/star.svg" alt="">
+                                    <img src="/images/star.svg" alt="">
+                                    <img src="/images/star.svg" alt="">
+                                    <img src="/images/star.svg" alt="">
+                                    <img src="/images/star.svg" alt="">
+                                </div>
+                                <div class="google-logo row">
+                                    <img src="/images/google.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="client-review-content p-15">
+                                <p class="mt-4 mb-4">1 month ago</p>
+                                <p class="mt-4 mb-4 text-justify">When you need us for improve
+                                    your business, then come with us
+                                    to help your business have reach it you
+                                    just sit and feel that goal.
+                                </p>
+                                <p class=" mt-4 mb-4 font-semibold">
+                                    Jhon Doe
+                                </p>
+                            </div>
+                        </div>
+                        <div class="client-card col-23 h-auto p-4 border-0 shadow-lg rounded-lg bg-white">
+                            <div class="client-card-header row justify-between align-center">
+                                <div class="client-stars row  justify-between align-self-center">
+                                    <img src="/images/star.svg" alt="">
+                                    <img src="/images/star.svg" alt="">
+                                    <img src="/images/star.svg" alt="">
+                                    <img src="/images/star.svg" alt="">
+                                    <img src="/images/star.svg" alt="">
+                                </div>
+                                <div class="google-logo row">
+                                    <img src="/images/google.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="client-review-content p-15">
+                                <p class="mt-4 mb-4">1 month ago</p>
+                                <p class="mt-4 mb-4 text-justify">When you need us for improve
+                                    your business, then come with us
+                                    to help your business have reach it you
+                                    just sit and feel that goal.
+                                </p>
+                                <p class=" mt-4 mb-4 font-semibold">
+                                    Jhon Doe
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Packages Section -->
-    <section class="packages">
+    <!-- Why Us Section -->
+    <<section class="why-us-section mt-10 mb-10">
         <div class="container">
-            <div class="row">
-                <div class="col"> ... </div>
-                <div class="col"> ... </div>
-                <div class="col"> ... </div>
+            <div class="grid">
+                <div>
+                    <h1 class="font-arial text-center mt-10 font-semibold">
+                        Why Choose Us
+                    </h1>
+                    <p class="text-center font-arial mb-10 font-14">Lorem When you need us for improve
+                        your business, then come with us <br>
+                        to help your business have reach it you
+                        just sit and feel that goal.</p>
+                </div>
+                <div class="grid grid-area-choose mx-auto justify-center">
+                    <div class="why-us-detail-section1  p-8">
+                        <img src="/images/choose.svg" alt="choose.png">
+                        <p class="mt-4 mb-2 font-semibold">Quality</p>
+                        <p class="text-justify text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit.
+                            Facere consectetur, minima et nulla totam ad cupiditate dolori
+                            bus optio commodi iusto quia.
+                        </p>
+                    </div>
+                    <div class="why-us-image-section">
+                        <img src="/images/choose-user.png" alt="user.png">
+                    </div>
+                    <div class="why-us-detail-section2  p-8">
+                        <img src="/images/choose.svg" alt="choose.png">
+                        <p class="mt-4 mb-2 font-semibold">Quality</p>
+                        <p class="text-justify text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit.
+                            Facere consectetur, minima et nulla totam ad cupiditate dolori
+                            bus optio commodi iusto quia.
+                        </p>
+                    </div>
+                    <div class="why-us-detail-section3  p-8">
+                        <img src="/images/choose.svg" alt="choose.png">
+                        <p class="mt-4 mb-2 font-semibold">Quality</p>
+                        <p class="text-justify text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit.
+                            Facere consectetur, minima et nulla totam ad cupiditate dolori
+                            bus optio commodi iusto quia.
+                        </p>
+                    </div>
+                    <div class="why-us-detail-section4  p-8">
+                        <img src="/images/choose.svg" alt="choose.png">
+                        <p class="mt-4 mb-2 font-semibold">Quality</p>
+                        <p class="text-justify text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit.
+                            Facere consectetur, minima et nulla totam ad cupiditate dolori
+                            bus optio commodi iusto quia.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section class="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col left"> ... </div>
-                <div class="col right"> ... </div>
+        <!-- Online Section -->
+        <section class="online mt-10 mb-10">
+            <div class="container bg-blue rounded-3xl">
+                <div class="row flex-center">
+                    <div class="left-online-section">
+                        <div class="p-12">
+                            <h1 class="text-white mt-4 mb-4 font-semibold">Online Token</h1>
+                            <p class="text-white mt-4 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Vel magnam doloribus distinctio laudantium delectus,
+                            </p>
+                            <button
+                                class="rounded-3xl px-12 py-4 mt-4 mb-4 bg-green-500 border-0 text-white text-2xl font-semibold">
+                                <img src="/images/whatsapp.svg" alt="" class="whatsapp-button-icon">
+                                Get Your Tokken
+                            </button>
+                        </div>
+                    </div>
+                    <div class="right-online-section">
+                        <img src="/images/vr.png" alt="vr.png" class="col-60 h-auto">
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>Made by Khubaib - Bin - Farooq</p>
-        </div>
-    </footer>
+        <!-- customer video Section -->
+        <section class=" customer-video mt-10 mb-10">
+            <div class="container ">
+                <div class="row justify-between align-center">
+                    <div class="customer-video-left">
+                        <div class="px-8">
+                            <h1 class="mt-4 mb-4 font-semibold">2300+ Customer shared their love with us</h1>
+                            <p class="mt-4 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Vel magnam doloribus distinctio laudantium delectus,Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit.
+                                Vel magnam doloribus distinctio laudantium delectus,Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit.
+                            </p>
+                            <p class="mt-4 mb-4 text-lg font-semibold">Jhon Walker</p>
+                        </div>
+                    </div>
+                    <div class="customer-video-right">
+                        <img src="/images/video.png" alt="vidoe.png" class="col-80 h-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Office Section -->
+        <section class="office mt-10 mb-10">
+            <div class="container">
+                <div class="row flex-center">
+                    <div class="col-100">
+                        <h1 class="text-center mt-10 font-semibold">
+                            Here is Our Office
+                        </h1>
+                        <p class="text-center mb-8 text-base">Lorem When you need us for improve
+                            your business, then come with us <br>
+                            to help your business have reach it you
+                            just sit and feel that goal.</p>
+                    </div>
+                    <div class="col-100 image-container flex flex-row justify-between align-center gap-4 mx-auto">
+                        <div class="office-image-container">
+                            <img src="/images/office.png" alt="office.png" class="office-image mx-auto">
+                        </div>
+                        <div class="office-image-container">
+                            <img src="/images/office.png" alt="office.png" class="office-image mx-auto">
+                        </div>
+                        <div class="office-image-container">
+                            <img src="/images/office.png" alt="office.png" class="office-image mx-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Online Token Form Section -->
+        <section class="online-form online-token-form-bg-img mt-10 py-12">
+            <div class="container ">
+                <div class="row justify-between align-center">
+                    <div class="online-form-left">
+                        <div class="px-8">
+                            <h1 class="mt-4 mb-4 font-semibold">Online Token</h1>
+                            <p class="mt-4 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Vel magnam doloribus distinctio laudantium delectus,Lorem ipsum dolor sit <br> amet
+                                consectetur adipisicing elit.
+                                Vel magnam doloribus distinctio laudantium delectus,Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit.
+                            </p>
+                            <button
+                                class="rounded-3xl px-12 py-4 mt-4 mb-4 bg-green-500 border-0 text-white text-2xl font-semibold">
+                                <img src="/images/whatsapp.svg" alt="" class="whatsapp-button-icon">
+                                Get Your Tokken
+                            </button>
+                        </div>
+                    </div>
+                    <div class="online-form-right">
+                        <form action="" class=" bg-white col-80 h-auto p-8 shadow-lg rounded-xl">
+                            <div class="col-100 h-auto flex flex-col flex-center gap-y-8 ">
+                                <div class="col-100 h-100">
+                                    <h1 class="text-center font-semibold">Leads Form</h1>
+                                    <p class="text-center text-lg">Fill this form for entry</p>
+                                </div>
+                                <div class="col-100 h-100">
+                                    <caption for="firstname">First Name</caption> <br>
+                                    <input type="text" name="firstname" id="firstname" placeholder="Your First Name"
+                                        class="block col-100 h-48px border border-gray-400 rounded p-2">
+                                </div>
+                                <div class="col-100 h-100">
+                                    <caption for="email">Email</caption><br>
+                                    <input type="email" name="email" id="email" placeholder="Your Email"
+                                        class="block col-100 h-48px border border-gray-400 rounded p-2">
+                                </div>
+                                <div class="col-100 h-auto">
+                                    <label for="phone">Phone</label><br>
+                                    <div class="phone-input-wrapper flex flex-row gap-2">
+                                        <select name="country-code" id="country-code" 
+                                            class="country-code-select h-48px border border-gray-400 rounded p-2">
+                                            <option value="+1">+1 (US)</option>
+                                            <option value="+44">+44 (UK)</option>
+                                            <option value="+91">+91 (IN)</option>
+                                            <option value="+971">+971 (UAE)</option>
+                                            <option value="+966" selected>+966 (SA)</option>
+                                            <option value="+92">+92 (PK)</option>
+                                            <option value="+61">+61 (AU)</option>
+                                            <option value="+86">+86 (CN)</option>
+                                        </select>
+                                        <input type="tel" name="phone" id="phone" placeholder="Your Phone Number"
+                                            class="phone-input h-48px border border-gray-400 rounded p-2">
+                                    </div>
+                                </div>
+                                <div class="col-100 h-100">
+                                    <caption for="message">Message</caption><br>
+                                    <textarea name="message" id="message"
+                                        class="block col-100 h-48px border border-gray-400 rounded p-2"
+                                        placeholder="Write Your Message"></textarea>
+                                </div>
+                                <div class="col-100 h-100">
+                                    <input type="submit" name="" id="" class="submit-button">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Footer -->
+        <footer class="footer-section bg-blue">
+            <div class="container col-100 h-cover">
+                <div class="footer-flex-container flex flex-row justify-between h-auto col-100 mx-auto py-12">
+                    <div class="white-logo-div">
+                        <img src="images/white-logo.svg" alt="logo.png" id="white-logo-image">
+                    </div>
+                    <div>
+                        <button class="contact-button bg-blue text-white border-gray-200 ">Contact</button>
+                    </div>
+                </div>
+                <hr class="col-100 mx-auto">
+                <div>
+                    <p class="text-white text-center p-8 text-sm">&copy; Copyright. All Rights
+                        Reserved</p>
+                </div>
+            </div>
+        </footer>
 </body>
 
 </html>
