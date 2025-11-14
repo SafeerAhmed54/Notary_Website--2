@@ -32,12 +32,13 @@
     <section class="hero">
         <div class="hero-container">
             <div class="flex flex-row flex-wrap col-100">
-                <div class="col-50 px-12 py-32 mr-16">
+                <div class="hero-left">
                     <div class="col-100">
                         <p class="mt-6 mb-6 py-2 px-4 bg-light rounded-3xl col-fit text-lg text-blue-700">
                             Notary Services
                         </p>
-                        <h1 class="text-5xl py-2 font-semibold">Hire <span class="text-blue-700">Better Faster</span>
+                        <h1 class="text-5xl py-2 font-semibold">Hire <span
+                                class="decorated relative text-blue-700">Better Faster</span>
                         </h1>
                         <h1 class="text-5xl py-2 font-semibold">Legal talent</h1>
                         <p class="py-6">When you need us for improve your business, then come <br>
@@ -49,7 +50,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-50 bg-img p-12 bg-light">
+                <div class="hero-right bg-light">
                     <form action="" class=" bg-white col-100 h-auto p-8 shadow-lg rounded-xl">
                         <div class="col-100 h-auto flex flex-col flex-center gap-y-8 ">
                             <div class="col-100 h-100">
@@ -67,23 +68,23 @@
                                     class="block col-100 h-48px border border-gray-400 rounded p-2">
                             </div>
                             <div class="col-100 h-auto">
-                                    <label for="phone">Phone</label><br>
-                                    <div class="phone-input-wrapper flex flex-row gap-2">
-                                        <select name="country-code" id="country-code" 
-                                            class="country-code-select h-48px border border-gray-400 rounded p-2">
-                                            <option value="+1">+1 (US)</option>
-                                            <option value="+44">+44 (UK)</option>
-                                            <option value="+91">+91 (IN)</option>
-                                            <option value="+971">+971 (UAE)</option>
-                                            <option value="+966" selected>+966 (SA)</option>
-                                            <option value="+92">+92 (PK)</option>
-                                            <option value="+61">+61 (AU)</option>
-                                            <option value="+86">+86 (CN)</option>
-                                        </select>
-                                        <input type="tel" name="phone" id="phone" placeholder="Your Phone Number"
-                                            class="phone-input h-48px border border-gray-400 rounded p-2">
-                                    </div>
+                                <label for="phone">Phone</label><br>
+                                <div class="phone-input-wrapper flex flex-row gap-2">
+                                    <select name="country-code" id="country-code"
+                                        class="country-code-select h-48px border border-gray-400 rounded p-2">
+                                        <option value="+1">+1 (US)</option>
+                                        <option value="+44">+44 (UK)</option>
+                                        <option value="+91">+91 (IN)</option>
+                                        <option value="+971">+971 (UAE)</option>
+                                        <option value="+966" selected>+966 (SA)</option>
+                                        <option value="+92">+92 (PK)</option>
+                                        <option value="+61">+61 (AU)</option>
+                                        <option value="+86">+86 (CN)</option>
+                                    </select>
+                                    <input type="tel" name="phone" id="phone" placeholder="Your Phone Number"
+                                        class="phone-input h-48px border border-gray-400 rounded p-2">
                                 </div>
+                            </div>
                             <div class="col-100 h-100">
                                 <caption for="message">Message</caption><br>
                                 <textarea name="message" id="message"
@@ -104,9 +105,6 @@
     <section class="partners bg-blue">
         <div class="partner-container">
             <div class="row justify-between col-100 h-auto">
-                <div class="col-10 relative">
-                    <img src="images/left.png" alt="design.png" class="trusted-partner-design left-0">
-                </div>
                 <div class="container">
                     <div class="col-100 text-center py-8">
                         <h1 class="text-4xl font-bold text-white">Trusted Partner</h1>
@@ -138,9 +136,6 @@
                         </figure>
                     </div>
                 </div>
-                <div class="col-10 relative right-0" style="box-sizing: border-box;">
-                    <img src="images/right.svg" alt="design.png" class=" trusted-partner-design right-0">
-                </div>
             </div>
         </div>
     </section>
@@ -149,21 +144,21 @@
     <section class="about">
         <div class="container">
             <div class="row flex-nowrap py-32 gap-y-12">
-                <div class="about-image-div col-50 h-auto flex flex-row justify-center align-center">
+                <div class="about-left">
                     <img src="/images/arbi.png" alt="arbi.png" class="about-image">
                 </div>
-                <div class="col-50 flex flex-col justify-start gap-y-12">
-                    <p class="one font-arial font-weight-500 font-16 block">ONE YEAR ALL YOU NEED</p>
-                    <h1 class="font-arial font-weight-700 mt-30 mb-30 block">About Us</h1>
-                    <p class="paragraph-about font-arial font-weight-500 font-16 mt-40 mb-40 block"
-                        style="word-spacing: 5px; line-height: 1.6;">Lorem ipsum dolor sit amet consectetur adipisicing
+                <div class="about-right">
+                    <p class="block text-xl font-normal">ONE YEAR ALL YOU NEED</p>
+                    <h1 class="block font-semibold text-4xl">About Us</h1>
+                    <p class="paragraph-about block text-lg" style="word-spacing: 5px; line-height: 1.6;">Lorem ipsum
+                        dolor sit amet consectetur adipisicing
                         elit.
                         Neque architecto laudantium, nam dolorem, nihil vero placeat
                         sapiente sunt alias voluptatum soluta temporibus autem consequuntur
                         dolor labore officiis est. Aperiam, optio!
                     </p>
-                    <p class="paragraph-about font-arial font-weight-500 font-16 mt-40 mb-40 block"
-                        style="word-spacing: 5px; line-height: 1.6;">Lorem ipsum dolor sit amet consectetur adipisicing
+                    <p class="paragraph-about block text-lg" style="word-spacing: 5px; line-height: 1.6;">Lorem ipsum
+                        dolor sit amet consectetur adipisicing
                         elit.
                         Neque architecto laudantium, nam dolorem, nihil vero placeat
                         sapiente sunt alias voluptatum soluta temporibus autem consequuntur
@@ -179,18 +174,19 @@
     </section>
 
     <!-- Services Section -->
-    <section class="services-section">
+    <section class="services-section" style="padding: 0px 0px 70px 0px;">
         <div class="container">
-            <div class="flex flex-col flex-center">
-                <div class="col-100 ">
-                    <h1 class="font-arial text-center mt-2 mb-2 font-semibold">
-                        Services We Are Providing
-                    </h1>
-                    <p class="text-center font-arial font-14">Lorem When you need us for improve
-                        your business, then come with us <br>
-                        to help your business have reach it you
-                        just sit and feel that goal.</p>
-                </div>
+            <div class="col-100  ">
+                <h1 class="font-arial text-center font-semibold text-4xl mb-4">
+                    Services We Are Providing
+                </h1>
+                <p class="text-center text-lg">Lorem When you need us for improve
+                    your business, then come with us <br>
+                    to help your business have reach it you
+                    just sit and feel that goal.
+                </p>
+            </div>
+            <div class="flex flex-col flex-center mb-10">
                 <div class="col-100 services-div flex flex-row flex-wrap justify-around align-center gap-y-5 mt-8 mb-8">
                     <div class="service-block rounded-md">
                         <div class="flex flex-center">
@@ -257,36 +253,36 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-100">
-                    <h2 class="font-arial text-center mt-2 mb-2 font-semibold">
-                        Prices Increasing Soon
-                    </h2>
-                    <p class="text-center font-arial mb-40 font-14">Lorem When you need us for improve
-                        your business, then come with us <br>
-                        to help your business have reach it you
-                        just sit and feel that goal.</p>
-                </div>
+            </div>
+            <div class="col-100">
+                <h2 class="font-arial text-center mt-2 mb-2 font-semibold">
+                    Pricing Increase Soon
+                </h2>
+                <p class="text-center text-lg">Lorem When you need us for improve
+                    your business, then come with us <br>
+                    to help your business have reach it you
+                    just sit and feel that goal.</p>
             </div>
         </div>
     </section>
 
     <!-- Client Review Section -->
-    <section class="client-section mt-10 mb-10 bg-light">
+    <section class="client-section bg-light" style="padding: 50px 0px;">
         <div class="container">
-            <div class="row">
+            <div class="col-100">
                 <div class="col-100">
-                    <div class="col-100  mt-10 mb-10">
-                        <h1 class="font-arial text-center font-semibold mt-10 mb-2">
-                            What Client Says About Us
-                        </h1>
-                        <p class="text-center font-arial mb-40 font-14">Lorem When you need us for improve
-                            your business, then come with us <br>
-                            to help your business have reach it you
-                            just sit and feel that goal.</p>
-                    </div>
+                    <h1 class="font-arial text-center font-semibold mb-2 text-4xl">
+                        What Client Says About Us
+                    </h1>
+                    <p class="text-center font-arial mb-40 font-14">Lorem When you need us for improve
+                        your business, then come with us <br>
+                        to help your business have reach it you
+                        just sit and feel that goal.</p>
+                </div>
+                <div class="row">
                     <div class="client-card-container">
                         <div class="client-card col-23 h-auto p-4 border-0 shadow-lg rounded-lg bg-white">
-                            <div class="client-card-header row justify-between align-center">
+                            <div class="client-card-header row justify-between align-center mb-10">
                                 <div class="client-stars row justify-between align-self-center">
                                     <img src="/images/star.svg" alt="">
                                     <img src="/images/star.svg" alt="">
@@ -311,8 +307,8 @@
                             </div>
                         </div>
                         <div class="client-card col-23 h-auto p-4 border-0 shadow-lg rounded-lg bg-white">
-                            <div class="client-card-header row justify-between align-center">
-                                <div class="client-stars row  justify-between align-self-center">
+                            <div class="client-card-header row justify-between align-center mb-10">
+                                <div class="client-stars row justify-between align-self-center">
                                     <img src="/images/star.svg" alt="">
                                     <img src="/images/star.svg" alt="">
                                     <img src="/images/star.svg" alt="">
@@ -336,8 +332,8 @@
                             </div>
                         </div>
                         <div class="client-card col-23 h-auto p-4 border-0 shadow-lg rounded-lg bg-white">
-                            <div class="client-card-header row justify-between align-center">
-                                <div class="client-stars row  justify-between align-self-center">
+                            <div class="client-card-header row justify-between align-center mb-10">
+                                <div class="client-stars row justify-between align-self-center">
                                     <img src="/images/star.svg" alt="">
                                     <img src="/images/star.svg" alt="">
                                     <img src="/images/star.svg" alt="">
@@ -361,8 +357,8 @@
                             </div>
                         </div>
                         <div class="client-card col-23 h-auto p-4 border-0 shadow-lg rounded-lg bg-white">
-                            <div class="client-card-header row justify-between align-center">
-                                <div class="client-stars row  justify-between align-self-center">
+                            <div class="client-card-header row justify-between align-center mb-10">
+                                <div class="client-stars row justify-between align-self-center">
                                     <img src="/images/star.svg" alt="">
                                     <img src="/images/star.svg" alt="">
                                     <img src="/images/star.svg" alt="">
@@ -392,20 +388,20 @@
     </section>
 
     <!-- Why Us Section -->
-    <<section class="why-us-section mt-10 mb-10">
+    <<section class="why-us-section" style="padding:70px 0px;">
         <div class="container">
-            <div class="grid">
-                <div>
-                    <h1 class="font-arial text-center mt-10 font-semibold">
-                        Why Choose Us
-                    </h1>
-                    <p class="text-center font-arial mb-10 font-14">Lorem When you need us for improve
-                        your business, then come with us <br>
-                        to help your business have reach it you
-                        just sit and feel that goal.</p>
-                </div>
-                <div class="grid grid-area-choose mx-auto justify-center">
-                    <div class="why-us-detail-section1  p-8">
+            <div>
+                <h1 class="font-arial text-center font-semibold text-4xl mb-4">
+                    Why Choose Us
+                </h1>
+                <p class="text-center font-arial mb-10 font-14">Lorem When you need us for improve
+                    your business, then come with us <br>
+                    to help your business have reach it you
+                    just sit and feel that goal.</p>
+            </div>
+            <div class="row justify-between item-center">
+                <div class="why-us-cols">
+                    <div class="col-100  p-8">
                         <img src="/images/choose.svg" alt="choose.png">
                         <p class="mt-4 mb-2 font-semibold">Quality</p>
                         <p class="text-justify text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing
@@ -414,18 +410,22 @@
                             bus optio commodi iusto quia.
                         </p>
                     </div>
+                    <div class="col-100 p-8">
+                        <img src="/images/choose.svg" alt="choose.png">
+                        <p class="mt-4 mb-2 font-semibold">Quality</p>
+                        <p class="text-justify text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit.
+                            Facere consectetur, minima et nulla totam ad cupiditate dolori
+                            bus optio commodi iusto quia.
+                        </p>
+                    </div>
+                </div>
+                <div class="why-us-cols flex-center">
                     <div class="why-us-image-section">
                         <img src="/images/choose-user.png" alt="user.png">
                     </div>
-                    <div class="why-us-detail-section2  p-8">
-                        <img src="/images/choose.svg" alt="choose.png">
-                        <p class="mt-4 mb-2 font-semibold">Quality</p>
-                        <p class="text-justify text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit.
-                            Facere consectetur, minima et nulla totam ad cupiditate dolori
-                            bus optio commodi iusto quia.
-                        </p>
-                    </div>
+                </div>
+                <div class="why-us-cols">
                     <div class="why-us-detail-section3  p-8">
                         <img src="/images/choose.svg" alt="choose.png">
                         <p class="mt-4 mb-2 font-semibold">Quality</p>
@@ -450,14 +450,14 @@
         </section>
 
         <!-- Online Section -->
-        <section class="online mt-10 mb-10">
-            <div class="container bg-blue rounded-3xl">
+        <section class="online" style="padding:50px 0px;">
+            <div class="container bg-blue rounded-3xl" style="padding:50px 0px;">
                 <div class="row flex-center">
                     <div class="left-online-section">
-                        <div class="p-12">
-                            <h1 class="text-white mt-4 mb-4 font-semibold">Online Token</h1>
+                        <div class="p-10" style="padding: 2.5rem 4rem 2.5rem 2.5rem;">
+                            <h1 class="text-white mt-4 mb-4 font-semibold text-4xl">Online Token</h1>
                             <p class="text-white mt-4 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Vel magnam doloribus distinctio laudantium delectus,
+                                Vel magnam doloribus distinctio laudantium delectus, distinctio laudantium delectus,
                             </p>
                             <button
                                 class="rounded-3xl px-12 py-4 mt-4 mb-4 bg-green-500 border-0 text-white text-2xl font-semibold">
@@ -474,16 +474,18 @@
         </section>
 
         <!-- customer video Section -->
-        <section class=" customer-video mt-10 mb-10">
+        <section class=" customer-video" style="padding: 25px 0px;">
             <div class="container ">
                 <div class="row justify-between align-center">
                     <div class="customer-video-left">
-                        <div class="px-8">
-                            <h1 class="mt-4 mb-4 font-semibold">2300+ Customer shared their love with us</h1>
+                        <div class="px-8" style="padding: 2.5rem 4rem 2.5rem 0.5rem;">
+                            <h1 class="mt-4 mb-4 font-semibold text-4xl">2300+ Customer shared their love with us</h1>
                             <p class="mt-4 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Vel magnam doloribus distinctio laudantium delectus,Lorem ipsum dolor sit amet
                                 consectetur adipisicing elit.
                                 Vel magnam doloribus distinctio laudantium delectus,Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Vel magnam doloribus distinctio laudantium delectus,Lorem
+                                ipsum dolor sit amet
                                 consectetur adipisicing elit.
                             </p>
                             <p class="mt-4 mb-4 text-lg font-semibold">Jhon Walker</p>
@@ -497,18 +499,18 @@
         </section>
 
         <!-- Office Section -->
-        <section class="office mt-10 mb-10">
+        <section class="office" style="padding: 70px 0px 50px;">
             <div class="container">
+                <div class="col-100">
+                    <h1 class="text-center mt-10 font-semibold text-4xl mb-6">
+                        Here is Our Office
+                    </h1>
+                    <p class="text-center mb-8 text-base">Lorem When you need us for improve
+                        your business, then come with us <br>
+                        to help your business have reach it you
+                        just sit and feel that goal.</p>
+                </div>
                 <div class="row flex-center">
-                    <div class="col-100">
-                        <h1 class="text-center mt-10 font-semibold">
-                            Here is Our Office
-                        </h1>
-                        <p class="text-center mb-8 text-base">Lorem When you need us for improve
-                            your business, then come with us <br>
-                            to help your business have reach it you
-                            just sit and feel that goal.</p>
-                    </div>
                     <div class="col-100 image-container flex flex-row justify-between align-center gap-4 mx-auto">
                         <div class="office-image-container">
                             <img src="/images/office.png" alt="office.png" class="office-image mx-auto">
@@ -525,12 +527,12 @@
         </section>
 
         <!-- Online Token Form Section -->
-        <section class="online-form online-token-form-bg-img mt-10 py-12">
+        <section class="online-token-form-bg-img" style="padding: 100px 0px;">
             <div class="container ">
                 <div class="row justify-between align-center">
                     <div class="online-form-left">
-                        <div class="px-8">
-                            <h1 class="mt-4 mb-4 font-semibold">Online Token</h1>
+                        <div class="px-8" style="padding: 2.5rem 4rem 2.5rem 0.5rem;">
+                            <h1 class="mt-4 mb-4 font-semibold text-4xl">Online Token</h1>
                             <p class="mt-4 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Vel magnam doloribus distinctio laudantium delectus,Lorem ipsum dolor sit <br> amet
                                 consectetur adipisicing elit.
@@ -545,7 +547,7 @@
                         </div>
                     </div>
                     <div class="online-form-right">
-                        <form action="" class=" bg-white col-80 h-auto p-8 shadow-lg rounded-xl">
+                        <form action="" class=" online-form bg-white h-auto p-8 shadow-lg rounded-xl">
                             <div class="col-100 h-auto flex flex-col flex-center gap-y-8 ">
                                 <div class="col-100 h-100">
                                     <h1 class="text-center font-semibold">Leads Form</h1>
@@ -564,7 +566,7 @@
                                 <div class="col-100 h-auto">
                                     <label for="phone">Phone</label><br>
                                     <div class="phone-input-wrapper flex flex-row gap-2">
-                                        <select name="country-code" id="country-code" 
+                                        <select name="country-code" id="country-code"
                                             class="country-code-select h-48px border border-gray-400 rounded p-2">
                                             <option value="+1">+1 (US)</option>
                                             <option value="+44">+44 (UK)</option>
@@ -594,8 +596,6 @@
                 </div>
             </div>
         </section>
-
-
 
         <!-- Footer -->
         <footer class="footer-section bg-blue">
