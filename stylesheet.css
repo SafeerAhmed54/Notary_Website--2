@@ -4,6 +4,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -27,6 +28,20 @@ button {
 textarea {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+}
+
+.hover-text {
+  color: black; /* normal color */
+  transition: color 0.3s ease; /* smooth animation */
+}
+
+.hover-text:hover {
+  color: #2563EB
+}
+
+::selection{
+    background-color: transparent;
+    color: #2563EB
 }
 
 .container {
